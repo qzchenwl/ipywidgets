@@ -1,6 +1,6 @@
 {
-  "name": "@jupyter-widgets/jupyterlab-manager",
-  "version": "1.0.1",
+  "name": "@qzchenwl/jupyterlab-manager",
+  "version": "1.0.1-1",
   "description": "The JupyterLab extension providing Jupyter widgets.",
   "keywords": [
     "jupyter",
