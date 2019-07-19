@@ -150,7 +150,7 @@ export function registerWidgetManager(
  * The widget manager provider.
  */
 const plugin: JupyterFrontEndPlugin<base.IJupyterWidgetRegistry> = {
-  id: '@jupyter-widgets/jupyterlab-manager:plugin',
+  id: '@qzchenwl/jupyterlab-manager:plugin',
   requires: [INotebookTracker, IRenderMimeRegistry, ISettingRegistry],
   optional: [IMainMenu],
   provides: base.IJupyterWidgetRegistry,
@@ -212,7 +212,7 @@ function activateWidgetExtension(app: JupyterFrontEnd, tracker: INotebookTracker
   });
 
   // Add a command for creating a new Markdown file.
-  commands.addCommand('@jupyter-widgets/jupyterlab-manager:saveWidgetState', {
+  commands.addCommand('@qzchenwl/jupyterlab-manager:saveWidgetState', {
     label: 'Save Widget State Automatically',
     execute: args => {
       return settingRegistry
@@ -226,7 +226,7 @@ function activateWidgetExtension(app: JupyterFrontEnd, tracker: INotebookTracker
 
   if (menu) {
     menu.settingsMenu.addGroup([
-      {command: '@jupyter-widgets/jupyterlab-manager:saveWidgetState'}
+      {command: '@qzchenwl/jupyterlab-manager:saveWidgetState'}
     ]);
   }
 
